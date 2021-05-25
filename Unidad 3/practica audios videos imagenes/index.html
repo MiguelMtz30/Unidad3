@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de imagenes, videos y audios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="n1"><a href="#">Inicio</a></li>
+                <li class="n1"><a href="">Opciones de Visualizacion</a>
+                    <ul class="menu">
+                        <input type="checkbox" id="btn-menu">
+                        <label for="btn-menu"><a href=""><img src="https://i.ibb.co/w02sRt7/cuadro1.png" alt="cuadro1" class="visu"></a></label>
+
+                        <input type="checkbox" id="btn-menu">
+                        <label for="btn-menu"><a href=""><img src="https://i.ibb.co/FBr1pXK/cuadro2.png" alt="cuadro2" class="visu"></a></label>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="de">
+                <li class="n1"><a href="#im">Imagenes</a></li>
+                <li class="n1"><a href="#vi">Videos</a></li>
+                <li class="n1"><a href="#au">Audios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br><br><br>
+
+    <div class="contenedor img">
+        <div><h2>Galeria de Imagenes</h2></div>
+        <div class="im" id="im">
+            <img class="i1" src="star-wars-2369317_1920.png" alt="star">
+            <img class="i2" src="millenium-falcon-1627322_1920.jpg" alt="falcon">
+            <img class="i3" src="wallpaper-4358343_1920.jpg" alt="r2-d2">
+            <img class="i4" src="star-wars-5854861_1920.jpg" alt="starwars">
+            <img class="i5" src="space-ship-5848228_1920.jpg" alt="spaceship">
+        </div>
+    </div>
+
+    <div class="contenedor vid">
+        <div><h2>Galeria de Videos</h2></div>
+        <div class="vi" id="vi">
+            <video src="Hyperspace - 25689.mp4" class="v1" autoplay loop muted></video>
+            <video src="Star Wars - 34656.mp4" class="v2" autoplay loop muted></video>
+            <video src="Death Star - 33050.mp4" class="v3" autoplay loop muted></video>
+            <video src="Spacecraft - 24564.mp4" class="v4" autoplay loop muted></video>
+            <video src="Galaxy - 535.vid" class="v5" autoplay loop muted></video>
+        </div>
+    </div><br><br>
+
+    <div class="contenedor aud">
+        <div><h2>Galeria de Audios</h2></div>
+        <div class="au" id="au">
+            <audio src="star-wars-main-title-and-the-arrival-at-naboo.mp3" class="a1" controls></audio>
+            <audio src="anakin-vs-obi-wan.mp3" class="a2" controls></audio>
+            <audio src="cantina-band.mp3" class="a3"controls></audio>
+            <audio src="star-wars-music-pick-episode-iv-the-force-theme.mp3" class="a4" autoplay controls></audio>
+            <audio src="the-imperial-march-darth-vaders-theme.mp3" class="a5" controls></audio>
+        </div>
+    </div>
+
+</body>
+</html>

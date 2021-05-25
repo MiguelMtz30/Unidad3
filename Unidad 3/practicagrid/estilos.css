@@ -1,0 +1,163 @@
+*{
+    font-family:monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: .8cm;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: .5cm;
+    text-align: center;
+    color: yellow;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    height: 100%;
+    background-color: black;
+}
+
+body{
+    min-height: 100%;
+}
+
+.contenedor > *{
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e1{
+    grid-area: e1;
+    transition: all 1s;
+}
+
+.e1:hover{
+    transform: matrix(1, 3, -1, 1, 80, 80);
+}
+
+.e2{
+    grid-area: e2;
+    transition: all 1s;
+}
+
+.e2:hover{
+    transform: skew(45deg);
+}
+
+.e3{
+    grid-area: e3;
+    transition: all 1s;
+}
+
+.e3:hover{
+    transform: rotate(45deg);
+}
+
+.e4{
+    grid-area: e4;
+    transition: all 1s;
+}
+
+.e4:hover{
+    transform: rotatey(180deg);
+}
+
+.e5{
+    grid-area: e5;
+    transition: all 1s;
+}
+
+.e5:hover{
+    transform: skewY(180deg);
+}
+
+.e6{
+    grid-area: e6;
+    transition: all 1s;
+}
+
+.e6:hover{
+    transform: translate(0px, 50px);
+}
+
+.e7{
+    grid-area: e7;
+    transition: all 1s;
+}
+
+.e7:hover{
+    transform: skewX(180deg);
+}
+
+.e8{
+    grid-area: e8;
+    transition: all 1s;
+}
+
+.e8:hover{
+    transform: rotatex(180deg);
+}
+
+.e9{
+    grid-area: e9;
+    transition: all 1s;
+}
+
+.e9:hover{
+    transform: translate(100px, 100px);
+}
+
+.e10{
+    grid-area: e10;
+    transition: all 1s;
+}
+
+.e10:hover{
+    transform: skew(-60deg);
+}
+
+.contenedor{
+    display: grid;
+    gap: 1px;
+    grid-template:  'e1 e1 e2' 25ch
+                    'e1 e1 e3' 25ch
+                    'e4 e5 e7' 27ch
+                    'e4 e6 e9' 27ch
+                    'e8 e8 e9' 40ch
+                    'e8 e8 e10' 40ch;
+}
+
+@media (max-width:1000px){
+    .contenedor{
+        display: grid;
+        gap: 1px;
+        grid-template:  'e1 e1 e2' 15ch
+                        'e1 e1 e3' 15ch
+                        'e4 e5 e7' 17ch
+                        'e4 e6 e9' 17ch
+                        'e8 e8 e9' 30ch
+                        'e8 e8 e10' 30ch;
+    }
+}
+
+@media (max-width:600px){
+    .contenedor {
+        display: block;
+    }
+
+    .elemento {
+        width: 100%;
+    }
+}

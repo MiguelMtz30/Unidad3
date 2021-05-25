@@ -1,0 +1,55 @@
+*{
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    margin: 10px;
+    min-height: 100vh;
+}
+
+.elemento{
+    border: 4px solid white;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    box-shadow: 5px 5px 5px black;
+    transition: all 1s;
+    transform: rotate(20deg);
+}
+
+.elemento::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    /*background-color: black;
+    opacity: 0.7;*/
+
+    background-color: rgba(0, 0, 0, 1);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.elemento:hover{
+    cursor: pointer;
+    transform: translate(10%, 50px);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    font-size: 20px;
+    position: absolute;
+    bottom: 7px;
+    left: 5px;
+    background-color: white;
+}

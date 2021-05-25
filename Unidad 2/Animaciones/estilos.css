@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'TOP';
+    src: url(/lte52462.ttf);
+}
+
+body{
+    background-color: rgb(130, 197, 206);
+    font-family: 'TOP';
+    font-weight: bolder;
+}
+
+h2{
+    background-color: rgb(237, 121, 166);
+    text-align: center;
+    color: white;
+    width: auto;
+    height: 45px;
+    font-size: 35px;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    transition: all 1s;
+}
+
+#banner:hover{
+    cursor: pointer;
+    transform: matrix(1, 3, -1, 1, 80, 80);
+}
+
+#logo{
+    width: 30%;
+    height: 30%;
+    padding: 5px;
+    transition: all 1s;
+}
+
+#logo:hover{
+    cursor: pointer;
+    transform: skew(45deg);
+}
+
+#top1{
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    position: absolute;
+    right: 100;
+    transition: all 1s;
+}
+
+#top1:hover{
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+#logo2{
+    width: 20%;
+    height: auto;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    transition: all 1s;
+}
+
+#logo2:hover{
+    cursor: pointer;
+    transform: rotatey(180deg);
+}
+
+#wall{
+    width: 80%;
+    height: auto;
+    padding: 5px;
+    transition: all 1s;
+    border: rgba(0, 0, 0, 1);
+}
+
+#wall:hover{
+    cursor: pointer;
+    transform: skewY(180deg);
+}
+
+#shy{
+    width: 20%;
+    height: auto;
+    padding: 5px;
+    position: absolute;
+    transition: all 1s;
+    transform: translate(0px, 50px);
+}
+
+#shy:hover{
+    cursor: pointer;
+    transform: translate(0px, -50px);
+}

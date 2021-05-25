@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="formestilos.css">
+</head>
+<body>
+    <h2>Manejo de formularios</h2>
+
+    <fieldset id="form1">
+        <legend>Registro de automoviles.</legend>
+
+        <br>
+        <div id="mar">
+            <label for="marca">Marca :</label>
+            <input type="text" name="marca" id="marca" required> <br><br>
+        </div>
+        
+        <div id="mod">
+            <label for="modelo">Modelo :</label>
+            <input type="text" name="modelo" id="modelo" required> <br><br>
+        </div>
+        
+        <div id="fec">
+            <label for="fecha">Fecha de compra :</label>
+            <input type="date" name="fecha" id="fecha" required> <br><br>
+        </div>
+        
+        <div id="cod">
+            <label for="codigo">Codigo del auto : </label>
+            <input type="password" name="codigo" id="codigo" required> <br><br>
+        </div>
+        
+        <div id="col">
+            <label for="color">Color del auto :</label>
+            <input type="color" name="color" id="color" required> <br><br>
+        </div><hr>
+        
+        <div id="im">
+            <label for="imagen">Imagen del auto :</label> <br>
+            <input type="image" src="carro.jpg" alt="Auto" width="279" height="200" id="imagen" required> <br><br>
+        </div>
+        
+        <div id="des">
+            <label for="descripcion">Describe tu auto :</label> <br>
+            <textarea name="descripcion" id="descripcion" cols="40" rows="13"></textarea> <br><br>
+        </div> <hr>
+        
+        <div id="pue">
+            <label for="puertas">No. Puertas :</label>
+            <select name="puertas" id="puertas">
+                <option value="2">2 Puertas</option>
+                <option value="4">4 Puertas</option>
+                <option value="5">5 Puertas</option>            
+            </select> <br><br>
+        </div>
+        
+        <div id="pre">
+            <label for="precio">Precio del Auto :</label>
+            <input type="number" min="50000" max="500000" step="10000" name="precio" id="precio" required> <br><br>
+        </div>
+        
+        <!-- <label for="CA">Caracteristicas Adicionales :</label> <br>
+        <input type="checkbox" id="CA" value="Radio">Radio
+        <input type="checkbox" name="Bluetooth">Bluetooth
+        <input type="checkbox" name="Wi-Fi">Wi-Fi
+        <input type="checkbox" name="GPS">GPS <br><br> -->
+        
+        <!-- <label for="capacidad">Capacidad de personas :</label>
+        <input list="capacidad">
+        <datalist id="capacidad">
+            <option value="2">
+            <option value="5">
+            <option value="7">
+            <option value="8">
+            <option value="+8">
+        </datalist> <br><br> -->
+
+        <!-- <label for="transmision">Tipo de transmisión :</label>
+        <input type="radio" name="transmision" id="transmision">Estándar
+        <input type="radio" name="transmision" id="transmision" value="automatico">Automático <br><br> -->
+
+        <fieldset id="equi">
+            <legend>Equipamiento del Auto</legend>
+
+            <input type="checkbox" name="eq1" id="eq1" value="Rines de aluminio">
+            <label for="eq1">Rines de Aluminio</label> <br>
+            <input type="checkbox" name="eq2" id="eq2" value="Asientos de Piel">
+            <label for="eq2">Asientos de Piel</label><br>
+            <input type="checkbox" name="eq3" id="eq3" value="Pantalla 12"">
+            <label for="eq3">Pantalla 12"</label><br>
+            <input type="checkbox" name="eq4" id="eq4" value="Faros de Niebla">
+            <label for="eq4">Faros de Niebla</label>
+        </fieldset> <br>
+
+
+        <fieldset id="trans">
+            <legend>Transmision</legend>
+
+            <input type="radio" name="tra" id="sta" value="Estándar">
+            <label for="sta">Estándar</label>
+            <input type="radio" name="tra" id="aut" value="Automático">
+            <label for="sta">Automático</label> <br>
+            <input type="radio" name="tra" id="hib" value="Hibrido">
+            <label for="hib">Hibrido</label>
+        </fieldset> 
+
+
+        <div id="seg">
+            <label for="seguro">Aseguradoras</label>
+            <input type="text" list="asegura" id="seguro">
+            <datalist id="asegura">
+                <option value="Axxa"></option>
+                <option value="HDI"></option>
+                <option value="INBURSA"></option>
+                <option value="GNP"></option>
+            </datalist>
+        </div>
+        
+    </fieldset>
+</body>
+</html>

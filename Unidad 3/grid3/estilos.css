@@ -1,0 +1,33 @@
+.contenedor{
+    background-color: rgba(175, 175, 175, 0.774);
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    grid-template-rows: repeat(3,100px);
+    gap: 10px;
+    padding: 10px;
+}
+
+.elemento{
+    background-color: darkolivegreen;
+    border-radius:1cm ;
+    box-shadow: 4px 4px 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.e1,.e5{
+    grid-column: 1/span 3;
+}
+
+@media all and (max-width:800px){
+    .e2,.e3,.e4{
+        grid-column: 1/ span 3;
+    }
+
+    .contenedor{
+        grid-template-rows: repeat(5,100px);
+    }
+}

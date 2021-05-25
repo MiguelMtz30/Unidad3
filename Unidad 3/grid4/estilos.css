@@ -1,0 +1,21 @@
+.contenedor{
+    background-color: rgba(175, 175, 175, 0.774);
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+
+.elemento{
+    background-color: darkolivegreen;
+    border-radius:1cm ;
+    box-shadow: 4px 4px 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-family: 'milcandy';
+    font-size: 40px;
+    color: white;
+}

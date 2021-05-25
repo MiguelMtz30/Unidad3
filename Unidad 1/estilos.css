@@ -1,0 +1,29 @@
+        h2{
+            background-color:coral;
+            color: white;
+            font-size: 2.2cm;
+        }
+
+        #uno{
+            color: goldenrod;
+        }
+
+        span{
+            background-color: yellow;
+            font-size: .5cm;
+        }
+
+        img{
+            border-radius: 10%;
+        }
+
+        nav{
+            background-color: aquamarine;
+        }
+
+        footer{
+            background-color: darkblue;
+            color: white;
+        }
+
+        

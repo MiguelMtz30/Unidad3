@@ -1,0 +1,17 @@
+*{
+    font-size: 16px;
+}
+
+.caja{
+    width: 535px;
+    padding: 1em;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    margin: 10px;
+    float: left;
+}
+
+img{
+    width: 99.9%;
+}

@@ -1,0 +1,54 @@
+*{
+    background-color: rgb(175, 180, 228)
+}
+
+h1{
+    color: rgb(51, 50, 50);
+    font-size: 36px;
+}
+
+div h4{
+    color: rgb(124, 202, 176);
+}
+
+.Selector{
+    background-color: beige;
+    width: 143px;
+}
+
+#unico{
+    background-color: rgb(135, 151, 206);
+    width: 113px;
+}
+
+br+h4{
+    color: forestgreen;
+}
+
+[sitio]{
+    color:darkgreen;
+}
+
+[sitio="Externo"]{
+    background-color: greenyellow;
+}
+
+[sitio~="Externo"]{
+    background-color: greenyellow;
+}
+
+[sitio|="Externo"]{
+    background-color: greenyellow;
+}
+
+[sitio^="Externo"]{
+    font-size: 0.75cm;
+}
+
+[sitio$="al"]{
+    font-size: 1cm;
+}
+
+[sitio*="o"]{
+    background-size: 200px;
+}
